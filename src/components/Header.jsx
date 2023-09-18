@@ -5,7 +5,9 @@ const Header = () => {
     <header>
       <nav>
         <div>
-          <a href="/" accessKey="j" title="Joy (Alt + J)">Joy</a>
+          <a href="/" accessKey="j" title="Joy (Alt + J)">
+            Joy
+          </a>
           <ul>
             <li>
               <Link to="/about">About</Link>

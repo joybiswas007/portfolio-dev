@@ -3,7 +3,9 @@ const Footer = () => {
   return (
     <footer className="footer">
       <span className="user-title">
-        <div data-text="JOY BISWAS" className="matrix">&copy;{year} - Joy Biswas</div>
+        <div data-text="JOY BISWAS" className="matrix">
+          &copy;{year} - Joy Biswas
+        </div>
       </span>
     </footer>
   );
