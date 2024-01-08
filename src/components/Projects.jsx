@@ -16,7 +16,12 @@ const Projects = () => {
               {lists.map((list, index) => {
                 return (
                   <li key={index}>
-                    <Link to={list.link} className="text-blue-500 underline">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      to={list.link}
+                      className="text-blue-500 underline"
+                    >
                       {list.name}
                     </Link>
                     <p>{list.description}</p>
@@ -27,6 +32,8 @@ const Projects = () => {
             <p>
               Checkout my{" "}
               <Link
+                target="_blank"
+                rel="noopener noreferrer"
                 to="https://github.com/joybiswas007?tab=repositories"
                 className="text-blue-500 underline"
               >

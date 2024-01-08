@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import Title from "./Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import profileImage from "../assets/profile.png";
-
 
 const About = () => {
   const aboutTitle = "About - Joy";
@@ -41,21 +40,21 @@ const About = () => {
             </p>
           </section>
           <section>
-            <h2 className="text-2xl font-semibold mb-4 text-center">Social Links</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-center">
+              Social Links
+            </h2>
             <div className="flex justify-center gap-4">
               <Link
+                target="_blank"
+                rel="noopener noreferrer"
                 to="https://github.com/joybiswas007"
                 className="text-gray-400 hover:text-white"
               >
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </Link>
               <Link
-                to="https://facebook.com/joy.biswas.l337"
-                className="text-gray-400 hover:text-white"
-              >
-                <FontAwesomeIcon icon={faFacebook} size="2x" />
-              </Link>
-              <Link
+                target="_blank"
+                rel="noopener noreferrer"
                 to="mailto:joybiswas040701@gmail.com"
                 className="text-gray-400 hover:text-white"
               >
