@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import profileImage from "../assets/profile.png";
+import { user } from "./data/User"
 
 const About = () => {
   const aboutTitle = "About - Joy";
-
+  const { fullname, mail, github } = user;
+  const { first, second } = user.about;
   return (
     <>
       <Title title={aboutTitle} />
@@ -19,14 +21,14 @@ const About = () => {
               className="w-32 h-32 md:w-48 md:h-48 mx-auto rounded-full"
               draggable="false"
               src={profileImage}
-              alt="Joy Biswas"
-              title="Joy Biswas"
+              alt={fullname}
+              title={fullname}
             />
             <p className="text-center mt-4">
-              Hi there, I am Joy! Welcome to my personal Linux-powered space station.
+              {first}
             </p>
             <p className="text-center mt-4">
-              I am Joy Biswas, always committed to my works and goals. I'm also a fast learner and passionate about implementing and launching new projects and ideas. I navigate through the Linux galaxy, exploring the command-line constellations and scripting nebulae. As a code astronaut, my mission is to bring software innovations back to Earth. I'm very fond of open-source software and always trying to find a way to contribute to them.
+              {second}
             </p>
           </section>
 
@@ -45,7 +47,7 @@ const About = () => {
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://github.com/joybiswas007"
+                  to={github}
                   className="text-gray-400 hover:text-white"
                 >
                   <FontAwesomeIcon icon={faGithub} size="2x" />
@@ -53,7 +55,7 @@ const About = () => {
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="mailto:joybiswas040701@gmail.com"
+                  to={`mailto:${mail}`}
                   className="text-gray-400 hover:text-white"
                 >
                   <FontAwesomeIcon icon={faEnvelope} size="2x" />

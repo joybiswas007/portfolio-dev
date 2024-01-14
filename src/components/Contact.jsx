@@ -1,9 +1,11 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import Title from "./Title";
+import { user } from "./data/User";
 
 const Contact = () => {
   const contactTitle = "Joy - Contact";
-
+  const { mail } = user;
+  const { third } = user.about;
   return (
     <>
       <Title title={contactTitle} />
@@ -13,16 +15,18 @@ const Contact = () => {
           <section>
             <p className="mb-4">
               Feel free to reach out to me! You can contact me via email at{" "}
-              <a
-                href="mailto:joybiswas040701@gmail.com"
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                to={`mailto:${mail}`}
                 className="text-blue-400 hover:underline"
               >
-                joybiswas040701@gmail.com
-              </a>
+                {mail}
+              </Link>
               .
             </p>
             <p className="mb-4">
-              I am actively seeking job opportunities. If you have any job openings or if you'd like to discuss potential collaborations, please don't hesitate to send me a message.
+              {third}
             </p>
           </section>
         </div>

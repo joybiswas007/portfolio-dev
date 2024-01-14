@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Title from "./Title";
-import { lists } from "./Lists";
+import { lists } from "./data/Lists";
+import { user } from "./data/User";
 
 const Projects = () => {
   const projectsTitle = "Joy - Projects";
@@ -12,7 +13,7 @@ const Projects = () => {
         <h1 className="text-3xl md:text-4xl font-semibold mb-4">Projects</h1>
         <div>
           <section>
-            <p className="mb-4">Here are some projects I've worked on:</p>
+            <p className="mb-4">Here are some projects I&apos;ve worked on:</p>
             <ul className="list-disc ml-6 mb-4">
               {lists.map((list, index) => (
                 <li key={index} className="mb-2">
@@ -33,7 +34,7 @@ const Projects = () => {
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
-                to="https://github.com/joybiswas007?tab=repositories"
+                to={`${user.github}?tab=repositories`}
                 className="text-blue-400 hover:underline"
               >
                 Github

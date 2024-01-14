@@ -1,19 +1,36 @@
-# portfolio-dev
-My personal portfolio written in React.js.
+# Portfolio-Dev
 
-Check demo here: https://portfolio-dev-lovat.vercel.app/
+This is my personal portfolio website, built with React.js.
 
-Fork the repo and don't forget to modify the data as you want.
+## Demo
 
-## Requirements
-First clone the repo
+You can view a live demo of the portfolio here:
+[https://portfolio-dev-lovat.vercel.app/](https://portfolio-dev-lovat.vercel.app/)
 
-Navigate to the cloned directory: 
+## Getting Started
 
-Install dependencies: ``` npm install ```
+### Installation
 
-Run the server: ```npm run dev```
-and open `localhost:5173` in  your browser
+1. Clone the repository:
 
-##
-Inspired by https://whiskers.dev
+2. Navigate to the cloned directory:
+
+3. Install the necessary dependencies: `npm install`
+
+### Usage
+
+1. Start the development server: `npm run dev`
+
+2. Open `http://localhost:5173` in your browser to view the portfolio.
+
+## Customization
+
+To personalize your portfolio, edit the `src/components/data/User.js` file with your details.
+
+## Acknowledgments
+
+- Inspired by [Whiskers.dev](https://whiskers.dev)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).

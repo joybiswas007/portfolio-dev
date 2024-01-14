@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import profileImage from "../assets/profile.png";
+import { user } from "./data/User.js"
 
 const Home = () => {
   return (
@@ -11,13 +12,13 @@ const Home = () => {
         className="w-32 h-32 md:w-48 md:h-48 mx-auto rounded-full mb-4"
         draggable="false"
         src={profileImage}
-        alt="Joy Biswas"
+        alt={user.fullname}
       />
       <h1 className="text-3xl md:text-4xl font-semibold mb-2">Joy Biswas</h1>
       <div className="mb-4">
-        <span className="text-gray-400">Node.js Developer</span>
+        <span className="text-gray-400">{user.profession.first}</span>
         <span className="mx-2 text-gray-400">|</span>
-        <span className="text-gray-400">Backend Developer</span>
+        <span className="text-gray-400">{user.profession.second}</span>
       </div>
       <div className="mb-8 space-x-4">
         <Link to="/about" className="text-blue-400 hover:underline">
@@ -31,7 +32,7 @@ const Home = () => {
         <Link
           target="_blank"
           rel="noopener noreferrer"
-          to="https://github.com/joybiswas007"
+          to={user.github}
           className="text-gray-400 hover:text-white"
         >
           <FontAwesomeIcon icon={faGithub} size="2x" />
@@ -39,7 +40,7 @@ const Home = () => {
         <Link
           target="_blank"
           rel="noopener noreferrer"
-          to="mailto:joybiswas040701@gmail.com"
+          to={`mailto:${user.mail}`}
           className="text-gray-400 hover:text-white"
         >
           <FontAwesomeIcon icon={faEnvelope} size="2x" />
