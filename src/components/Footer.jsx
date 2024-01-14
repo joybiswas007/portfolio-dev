@@ -1,10 +1,14 @@
 const Footer = () => {
   const year = new Date().getFullYear();
+
   return (
-    <footer className="bg-gray-800 text-white border-t border-gray-700 py-2">
-      <div className="container mx-auto px-4 text-center">
+    <footer className="bg-gray-900 text-white py-4 fixed bottom-0 left-0 right-0">
+      <div className="container mx-auto text-center">
         <div>
-          &copy;{year} - Joy Biswas
+          <p>&copy;{year} - Joy Biswas</p>
+          <p className="text-sm mt-2">
+            Crafted with <span className="text-red-500">&#9829;</span> using React
+          </p>
         </div>
       </div>
     </footer>

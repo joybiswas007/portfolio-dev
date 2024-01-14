@@ -4,17 +4,32 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <Router>
-      <div className="flex flex-col h-screen bg-gray-900 text-white">
+      <div className="bg-gray-900 text-white min-h-screen font-sans">
         <Header />
-        <main className="flex-grow overflow-auto">
+        <main className="container mx-auto p-4">
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route
+              exact
+              path="/"
+              element={<Home />}
+            />
+            <Route
+              path="/about"
+              element={<About />}
+            />
+            <Route
+              path="/projects"
+              element={<Projects />}
+            />
+            <Route
+              path="/contact"
+              element={<Contact />}
+            />
           </Routes>
         </main>
         <Footer />

@@ -7,59 +7,58 @@ import profileImage from "../assets/profile.png";
 
 const About = () => {
   const aboutTitle = "About - Joy";
+
   return (
     <>
       <Title title={aboutTitle} />
-      <article className="min-h-screen bg-gray-900 text-white flex flex-col">
-        <h1 className="text-center text-3xl font-bold">About</h1>
-        <div className="flex-grow container mx-auto p-8">
-          <section className="mb-6">
+      <article className="container mx-auto p-4 text-white">
+        <div className="flex flex-col md:flex-row items-center md:items-start">
+          {/* Left Section */}
+          <section className="md:mr-8 mb-8 md:mb-0">
             <img
+              className="w-32 h-32 md:w-48 md:h-48 mx-auto rounded-full"
               draggable="false"
               src={profileImage}
               alt="Joy Biswas"
               title="Joy Biswas"
-              className="mx-auto h-32 w-32 rounded-full"
             />
-            <p className="mt-4 text-lg">
-              Hi there, I am Joy! Welcome to my personal website.
+            <p className="text-center mt-4">
+              Hi there, I am Joy! Welcome to my personal Linux-powered space station.
             </p>
-            <p className="mt-2">
-              I am Joy Biswas, who is always committed to his works and goals. I
-              am also a fast learner and passionate about implementing and
-              launching new projects and ideas. I am very fond of open-source
-              software and always trying to find a way to contribute to them.
+            <p className="text-center mt-4">
+              I am Joy Biswas, always committed to my works and goals. I'm also a fast learner and passionate about implementing and launching new projects and ideas. I navigate through the Linux galaxy, exploring the command-line constellations and scripting nebulae. As a code astronaut, my mission is to bring software innovations back to Earth. I'm very fond of open-source software and always trying to find a way to contribute to them.
             </p>
           </section>
-          <section className="mb-6">
-            <p>
+
+          {/* Right Section */}
+          <section className="md:w-1/2">
+            <p className="text-center md:text-left mt-4 md:mt-0">
               See my{" "}
-              <Link to="/projects" className="text-blue-500 underline">
+              <Link to="/projects" className="text-blue-400 hover:underline">
                 projects
               </Link>
             </p>
-          </section>
-          <section>
-            <h2 className="text-2xl font-semibold mb-4 text-center">
-              Social Links
-            </h2>
-            <div className="flex justify-center gap-4">
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                to="https://github.com/joybiswas007"
-                className="text-gray-400 hover:text-white"
-              >
-                <FontAwesomeIcon icon={faGithub} size="2x" />
-              </Link>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                to="mailto:joybiswas040701@gmail.com"
-                className="text-gray-400 hover:text-white"
-              >
-                <FontAwesomeIcon icon={faEnvelope} size="2x" />
-              </Link>
+
+            <div className="text-center md:text-left mt-4">
+              <h2 className="text-lg font-semibold mb-2">Social Links</h2>
+              <div className="flex justify-center md:justify-start space-x-4">
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/joybiswas007"
+                  className="text-gray-400 hover:text-white"
+                >
+                  <FontAwesomeIcon icon={faGithub} size="2x" />
+                </Link>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="mailto:joybiswas040701@gmail.com"
+                  className="text-gray-400 hover:text-white"
+                >
+                  <FontAwesomeIcon icon={faEnvelope} size="2x" />
+                </Link>
+              </div>
             </div>
           </section>
         </div>

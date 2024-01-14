@@ -2,21 +2,42 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white shadow-md">
-      <nav className="container mx-auto px-6 py-3">
-        <div className="flex justify-between items-center">
-          <a href="/" accessKey="j" title="Joy (Alt + J)" className="text-xl font-semibold hover:text-gray-300">
-            Joy
-          </a>
-          <ul className="flex space-x-4">
-            <li>
-              <Link to="/about" className="hover:text-gray-300">About</Link>
-            </li>
-            <li>
-              <Link to="/projects" className="hover:text-gray-300">Projects</Link>
-            </li>
-          </ul>
-        </div>
+    <header className="bg-gray-900 p-4">
+      <nav className="container mx-auto flex justify-between items-center">
+        <Link
+          to="/"
+          className="text-white text-2xl font-semibold hover:text-gray-400"
+          accessKey="j"
+          title="Joy (Alt + J)"
+        >
+          Joy
+        </Link>
+        <ul className="flex space-x-4">
+          <li>
+            <Link
+              to="/about"
+              className="text-white hover:text-gray-400"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/projects"
+              className="text-white hover:text-gray-400"
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="text-white hover:text-gray-400"
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );
