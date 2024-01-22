@@ -11,5 +11,6 @@ export const user = {
     profession: {
         first: "Node.js Developer",
         "second": "Backend Developer"
-    }
+    },
+    resume: "https://drive.google.com/file/d/1SrOHAI0q7Hcc9AECp_EJ3eMLFB8bYQX4/view?usp=drive_link"
 };
