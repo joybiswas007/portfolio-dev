@@ -12,5 +12,5 @@ export const user = {
         first: "Node.js Developer",
         "second": "Backend Developer"
     },
-    resume: "https://drive.google.com/file/d/1SrOHAI0q7Hcc9AECp_EJ3eMLFB8bYQX4/view?usp=drive_link"
+    resume: "https://drive.google.com/file/d/1fY5onR9F8vWT1g7yF09nx6kyQvR2LDs3/view?usp=sharing"
 };
