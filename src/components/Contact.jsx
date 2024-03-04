@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Title from "./Title";
 import { user } from "./data/User";
 
@@ -13,28 +12,7 @@ const Contact = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
             <p className="mb-4">
-              Feel free to reach out to me! You can contact me via email at{" "}
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                to={`mailto:${user.mail}`}
-                className="text-blue-400 hover:underline"
-              >
-                {user.mail}
-              </Link>
-              .
-            </p>
-            <p className="mb-4">
-              You can also find me on{" "}
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                to={user.github}
-                className="text-blue-400 hover:underline"
-              >
-                GitHub
-              </Link>
-              .
+              {user.about.third}{" "}
             </p>
           </div>
 
