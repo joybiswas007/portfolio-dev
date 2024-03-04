@@ -1,11 +1,11 @@
 # Portfolio-Dev
 
-This is my personal portfolio website, built with React.js.
+This is my personal portfolio website, built with React.js and Tailwind CSS.
 
 ## Demo
 
 You can view a live demo of the portfolio here:
-[https://portfolio-dev-lovat.vercel.app/](https://portfolio-dev-lovat.vercel.app/)
+[https://joybiswas.vercel.app]( https://joybiswas.vercel.app)
 
 ## Getting Started
 
@@ -25,11 +25,7 @@ You can view a live demo of the portfolio here:
 
 ## Customization
 
-To personalize your portfolio, edit the `src/components/data/User.js` file with your details.
-
-## Acknowledgments
-
-- Inspired by [Whiskers.dev](https://whiskers.dev)
+To personalize your portfolio, edit the `src/components/data/User.js or Skill.js or Lists.js` file with your details.
 
 ## License
 

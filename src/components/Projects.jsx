@@ -1,49 +1,41 @@
 import { Link } from "react-router-dom";
 import Title from "./Title";
 import { lists } from "./data/Lists";
-import { user } from "./data/User";
+import { user } from "./data/User.js";
+
 
 const Projects = () => {
   const projectsTitle = "Joy - Projects";
 
   return (
-    <>
+    <div className="bg-gray-900 text-white min-h-screen font-sans">
       <Title title={projectsTitle} />
-      <article className="container mx-auto p-4 text-white">
-        <h1 className="text-3xl md:text-4xl font-semibold mb-4">Projects</h1>
-        <div>
-          <section>
-            <p className="mb-4">Here are some projects I&apos;ve worked on:</p>
-            <ul className="list-disc ml-6 mb-4">
-              {lists.map((list, index) => (
-                <li key={index} className="mb-2">
-                  <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    to={list.link}
-                    className="text-blue-400 hover:underline"
-                  >
-                    {list.name}
-                  </Link>
-                  <p className="text-gray-400 ml-2">{list.description}</p>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-4">
-              Check out more projects on my{" "}
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                to={`${user.github}?tab=repositories`}
-                className="text-blue-400 hover:underline"
-              >
-                Github
-              </Link>.
-            </p>
-          </section>
+      <div className="container mx-auto p-4">
+        <h1 className="text-3xl md:text-4xl font-semibold mb-8 text-center">Projects</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {lists.map((project, index) => (
+            <div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+              <div className="w-full h-48 bg-gray-700 flex items-center justify-center">
+                <span className="text-gray-500 text-sm">No Image Available</span>
+              </div>
+              <div className="p-4">
+                <h2 className="font-bold text-xl mb-2">{project.name}</h2>
+                <p className="text-gray-400">{project.description}</p>
+                <div className="flex justify-between items-center mt-4">
+                  <Link to={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View Project</Link>
+
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-      </article>
-    </>
+        <div className="text-center mt-8">
+          <Link to={user.github} target="_blank" rel="noopener noreferrer" className="text-lg text-blue-400 hover:underline">
+            View More Projects on GitHub
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };
 

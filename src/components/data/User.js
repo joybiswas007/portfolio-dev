@@ -1,6 +1,7 @@
 export const user = {
     fullname: "Joy Biswas",
     github: "https://github.com/joybiswas007",
+    linkedin: "https://www.linkedin.com/in/joybiswasl337",
     mail: "joybiswas040701@gmail.com",
     about: {
         first: "Hi there, I am Joy! Welcome to my personal Linux-powered space station.",
@@ -12,5 +13,5 @@ export const user = {
         first: "Node.js Developer",
         "second": "Backend Developer"
     },
-    resume: "https://drive.google.com/file/d/1SrOHAI0q7Hcc9AECp_EJ3eMLFB8bYQX4/view?usp=drive_link"
+    resume: "https://drive.google.com/file/d/1nCJ7b1poa4p5Sevwh1NyCZck0DpvJVUM/view?usp=sharing"
 };
