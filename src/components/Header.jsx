@@ -14,26 +14,17 @@ const Header = () => {
         </Link>
         <ul className="flex space-x-4">
           <li>
-            <Link
-              to="/about"
-              className="text-white hover:text-gray-400"
-            >
+            <Link to="/about" className="text-white hover:text-gray-400">
               About
             </Link>
           </li>
           <li>
-            <Link
-              to="/projects"
-              className="text-white hover:text-gray-400"
-            >
+            <Link to="/projects" className="text-white hover:text-gray-400">
               Projects
             </Link>
           </li>
           <li>
-            <Link
-              to="/contact"
-              className="text-white hover:text-gray-400"
-            >
+            <Link to="/contact" className="text-white hover:text-gray-400">
               Contact
             </Link>
           </li>

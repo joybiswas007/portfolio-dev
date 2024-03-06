@@ -6,12 +6,6 @@ export const lists = [
     link: "https://github.com/joybiswas007/torrents-api",
   },
   {
-    name: "MagnetSearchBot",
-    description:
-      "A Telegram bot to fetch magnet links from public trackers using an API.",
-    link: "https://github.com/joybiswas007/MagnetSearchBot",
-  },
-  {
     name: "RuTracker API",
     description: "Unofficial RuTracker API written in Express.js.",
     link: "https://github.com/joybiswas007/rutracker-api",
@@ -27,5 +21,11 @@ export const lists = [
     description:
       "Some small PHP projects which I‘ve implemented after learning PHP & PHP OOP.",
     link: "https://github.com/joybiswas007/mini-php-projects",
+  },
+  {
+    name: "Portfolio-Dev",
+    description:
+      "A super minimalist developers portfolio written in React & Tailwind CSS.",
+    link: "https://github.com/joybiswas007/portfolio-dev",
   },
 ];

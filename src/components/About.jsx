@@ -22,7 +22,9 @@ const About = () => {
               alt={user.fullname}
               title={user.fullname}
             />
-            <p className="text-center mt-4 font-semibold text-lg">{user.fullname}</p>
+            <p className="text-center mt-4 font-semibold text-lg">
+              {user.fullname}
+            </p>
             <p className="text-center mt-2">{user.about.first}</p>
             <p className="text-center mt-2">{user.about.second}</p>
           </div>
@@ -43,7 +45,9 @@ const About = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-2xl font-semibold mb-4">Skills & Expertise</h2>
+              <h2 className="text-2xl font-semibold mb-4">
+                Skills & Expertise
+              </h2>
               <div className="flex flex-wrap justify-center md:justify-start gap-6">
                 {skills.map((skill, index) => (
                   <div key={index} className="text-center">

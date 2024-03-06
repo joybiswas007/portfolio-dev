@@ -11,9 +11,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
-            <p className="mb-4">
-              {user.about.third}{" "}
-            </p>
+            <p className="mb-4">{user.about.third} </p>
           </div>
 
           <div>
