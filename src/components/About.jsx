@@ -59,6 +59,11 @@ const About = () => {
             </div>
           </div>
         </div>
+        <div className="text-center mt-8">
+          <Link to="/matrix" className="text-lg text-green-500 hover:text-green-300 font-mono">
+            Enter the matrix?
+          </Link>
+        </div>
       </div>
     </div>
   );
