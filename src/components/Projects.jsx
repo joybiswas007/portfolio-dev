@@ -43,7 +43,7 @@ const Projects = () => {
         </div>
         <div className="text-center mt-8">
           <Link
-            to={user.github}
+            to={`${user.github}?tab=repositories`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-lg text-blue-400 hover:underline"

@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Matrix from "./components/Matrix";
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/matrix" element={<Matrix />} />
           </Routes>
         </main>
         <Footer />

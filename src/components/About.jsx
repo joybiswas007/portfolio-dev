@@ -33,13 +33,28 @@ const About = () => {
             <div className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Connect with Me</h2>
               <div className="flex justify-center md:justify-start space-x-4">
-                <Link to={user.github} className="hover:text-white">
+                <Link
+                  to={user.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                >
                   <FontAwesomeIcon icon={faGithub} size="2x" />
                 </Link>
-                <Link to={`mailto:${user.mail}`} className="hover:text-white">
+                <Link
+                  to={`mailto:${user.mail}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                >
                   <FontAwesomeIcon icon={faEnvelope} size="2x" />
                 </Link>
-                <Link to={user.linkedin} className="hover:text-white">
+                <Link
+                  to={user.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                >
                   <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 </Link>
               </div>
@@ -58,11 +73,6 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="text-center mt-8">
-          <Link to="/matrix" className="text-lg text-green-500 hover:text-green-300 font-mono">
-            Enter the matrix?
-          </Link>
         </div>
       </div>
     </div>
