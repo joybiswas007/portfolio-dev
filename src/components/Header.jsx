@@ -1,30 +1,41 @@
 import { Link } from "react-router-dom";
+import { user } from "./data/User";
 
 const Header = () => {
+  const { firstName } = user;
   return (
     <header className="bg-gray-900 p-4">
       <nav className="container mx-auto flex justify-between items-center">
         <Link
           to="/"
-          className="text-white text-2xl font-semibold hover:text-gray-400"
+          className="text-white text-3xl font-bold hover:text-gray-300"
           accessKey="j"
-          title="Joy (Alt + J)"
+          title="Home (Alt + j)"
         >
-          Joy
+          {firstName}
         </Link>
-        <ul className="flex space-x-4">
+        <ul className="flex space-x-6">
           <li>
-            <Link to="/about" className="text-white hover:text-gray-400">
+            <Link
+              to="/about"
+              className="text-white text-lg hover:text-gray-300"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link to="/projects" className="text-white hover:text-gray-400">
+            <Link
+              to="/projects"
+              className="text-white text-lg hover:text-gray-300"
+            >
               Projects
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="text-white hover:text-gray-400">
+            <Link
+              to="/contact"
+              className="text-white text-lg hover:text-gray-300"
+            >
               Contact
             </Link>
           </li>
